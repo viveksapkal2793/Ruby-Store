@@ -61,3 +61,14 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Run against this stable release
+group :development, :test do
+  gem 'rspec-rails', '~> 8.0.0'
+  gem 'factory_bot_rails'
+end
+
+# # Or, run against the main branch
+# group :development, :test do
+#   gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails'
+# end
